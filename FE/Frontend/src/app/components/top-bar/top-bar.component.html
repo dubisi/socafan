@@ -1,0 +1,17 @@
+<div class="parent-container">
+    <mat-toolbar class="sticky-toolbar">
+        <span>SOCAFAN</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu-button">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink='/socafan'>Home</button>
+            <button *ngIf="authService.isAdmin()" mat-menu-item routerLink='/admin'>Admin</button>
+            <button mat-menu-item routerLink='/about-us'>Our Story</button>
+            <button mat-menu-item routerLink='/how-it-works'>How it Works</button>
+            <button mat-menu-item routerLink='/result'>Results</button>
+        </mat-menu>
+    </mat-toolbar>
+</div>
+

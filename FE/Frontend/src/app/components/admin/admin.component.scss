@@ -1,0 +1,16 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for vertical centering */
+  }
+  
+  .centered-card {
+    width: 400px; /* Adjust width as needed */
+    padding: 20px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
